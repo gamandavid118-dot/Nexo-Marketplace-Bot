@@ -156,7 +156,6 @@ client.on("interactionCreate", async (interaction) => {
     const ticketChannel = await interaction.guild.channels.create({
       name: `ticket-${cleanUsername || "user"}`,
       type: ChannelType.GuildText,
-      parent: parent: "1574406033848270888"
       permissionOverwrites: [
         {
           id: interaction.guild.roles.everyone.id,
